@@ -9,7 +9,7 @@ import torch
 from torch import nn
 import torch.nn.functional as F
 from typing import Callable
-from nets.utils import arange_like, normalize_keypoints
+from .utils import arange_like, normalize_keypoints
 device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
 
 torch.backends.cudnn.deterministic = True
